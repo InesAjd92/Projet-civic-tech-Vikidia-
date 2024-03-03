@@ -1,0 +1,533 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.23.1017.0948                               -->
+<workbook original-version='18.1' source-build='2023.3.0 (20233.23.1017.0948)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+    <color-palette custom='true' name='Wikimédia light' type='regular'>
+      <color>#e5c0c0</color>
+      <color>#f9dde9</color>
+      <color>#fbdfc5</color>
+      <color>#fbeebf</color>
+      <color>#d5d1ec</color>
+      <color>#cbd6db</color>
+      <color>#c3d8ef</color>
+      <color>#c0e6ff</color>
+      <color>#f9f9f0</color>
+      <color>#cbe0d5</color>
+      <color>#dbf3ec</color>
+    </color-palette>
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='enquete_vikidia' inline='true' name='federated.0oxqq921q3rmoe116u2cv0uhylv6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='enquete_vikidia' name='textscan.1qm0fcs0skul8s1924jdk15ve0lq'>
+            <connection class='textscan' directory='C:/Users/UFR PHILLIA/Downloads' filename='enquete_vikidia.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='annee_contrib' name='textscan.1v05ooi07nehg6119vrt21fuv3pg'>
+            <connection class='textscan' directory='C:/Users/UFR PHILLIA/Documents' filename='annee_contrib.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='Feuille de calcul sans titre - annee_contrib' name='textscan.1p09lq50e579zs13c9x9m0ykm0l8'>
+            <connection class='textscan' directory='C:/Users/UFR PHILLIA/Downloads' filename='Feuille de calcul sans titre - annee_contrib.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1p09lq50e579zs13c9x9m0ykm0l8' name='Feuille de calcul sans titre - annee_contrib.csv' table='[Feuille de calcul sans titre - annee_contrib#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='fr_FR' separator=','>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='date' date-parse-format='yyyy|#|#|MMddHH/yyyy' name='En quelle année avez-vous rejoint la communauté Vikidienne ?' ordinal='1' />
+            <column datatype='string' name='Quel est votre degré de contribution ?' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1p09lq50e579zs13c9x9m0ykm0l8' name='Feuille de calcul sans titre - annee_contrib.csv' table='[Feuille de calcul sans titre - annee_contrib#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='fr_FR' separator=','>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='date' date-parse-format='yyyy|#|#|MMddHH/yyyy' name='En quelle année avez-vous rejoint la communauté Vikidienne ?' ordinal='1' />
+            <column datatype='string' name='Quel est votre degré de contribution ?' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Feuille de calcul sans titre - annee_contrib.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[Feuille de calcul sans titre - annee_contrib.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Feuille de calcul sans titre - annee_contrib.csv_308232D6C5044484A8C8A651BA1B5857]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>En quelle année avez-vous rejoint la communauté Vikidienne ?</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[En quelle année avez-vous rejoint la communauté Vikidienne ?]</local-name>
+            <parent-name>[Feuille de calcul sans titre - annee_contrib.csv]</parent-name>
+            <remote-alias>En quelle année avez-vous rejoint la communauté Vikidienne ?</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Feuille de calcul sans titre - annee_contrib.csv_308232D6C5044484A8C8A651BA1B5857]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quel est votre degré de contribution ?</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Quel est votre degré de contribution ?]</local-name>
+            <parent-name>[Feuille de calcul sans titre - annee_contrib.csv]</parent-name>
+            <remote-alias>Quel est votre degré de contribution ?</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Feuille de calcul sans titre - annee_contrib.csv_308232D6C5044484A8C8A651BA1B5857]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='date' name='[En quelle année avez-vous rejoint la communauté Vikidienne ?]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Feuille de calcul sans titre - annee_contrib.csv' datatype='table' name='[__tableau_internal_object_id__].[Feuille de calcul sans titre - annee_contrib.csv_308232D6C5044484A8C8A651BA1B5857]' role='measure' type='quantitative' />
+      <column-instance column='[En quelle année avez-vous rejoint la communauté Vikidienne ?]' derivation='Year' name='[yr:En quelle année avez-vous rejoint la communauté Vikidienne ?:ok]' pivot='key' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[yr:En quelle année avez-vous rejoint la communauté Vikidienne ?:ok]' palette='Wikimédia light' type='palette'>
+            <map to='#c3d8ef'>
+              <bucket>2007</bucket>
+            </map>
+            <map to='#c3d8ef'>
+              <bucket>2008</bucket>
+            </map>
+            <map to='#c3d8ef'>
+              <bucket>2009</bucket>
+            </map>
+            <map to='#c3d8ef'>
+              <bucket>2010</bucket>
+            </map>
+            <map to='#c3d8ef'>
+              <bucket>2011</bucket>
+            </map>
+            <map to='#c3d8ef'>
+              <bucket>2013</bucket>
+            </map>
+            <map to='#c3d8ef'>
+              <bucket>2014</bucket>
+            </map>
+            <map to='#c3d8ef'>
+              <bucket>2015</bucket>
+            </map>
+            <map to='#c3d8ef'>
+              <bucket>2016</bucket>
+            </map>
+            <map to='#c3d8ef'>
+              <bucket>2017</bucket>
+            </map>
+            <map to='#c3d8ef'>
+              <bucket>2018</bucket>
+            </map>
+            <map to='#c3d8ef'>
+              <bucket>2019</bucket>
+            </map>
+            <map to='#c3d8ef'>
+              <bucket>2022</bucket>
+            </map>
+            <map to='#c3d8ef'>
+              <bucket>2024</bucket>
+            </map>
+            <map to='#e5c0c0'>
+              <bucket>2020</bucket>
+            </map>
+            <map to='#e5c0c0'>
+              <bucket>2021</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;FR&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Feuille de calcul sans titre - annee_contrib.csv' id='Feuille de calcul sans titre - annee_contrib.csv_308232D6C5044484A8C8A651BA1B5857'>
+            <properties context=''>
+              <relation connection='textscan.1p09lq50e579zs13c9x9m0ykm0l8' name='Feuille de calcul sans titre - annee_contrib.csv' table='[Feuille de calcul sans titre - annee_contrib#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='fr_FR' separator=','>
+                  <column datatype='integer' name='ID' ordinal='0' />
+                  <column datatype='date' date-parse-format='yyyy|#|#|MMddHH/yyyy' name='En quelle année avez-vous rejoint la communauté Vikidienne ?' ordinal='1' />
+                  <column datatype='string' name='Quel est votre degré de contribution ?' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Feuille 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='enquete_vikidia' name='federated.0oxqq921q3rmoe116u2cv0uhylv6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oxqq921q3rmoe116u2cv0uhylv6'>
+            <column datatype='date' name='[En quelle année avez-vous rejoint la communauté Vikidienne ?]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Quel est votre degré de contribution ?]' role='dimension' type='nominal' />
+            <column-instance column='[Quel est votre degré de contribution ?]' derivation='Count' name='[cnt:Quel est votre degré de contribution ?:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[En quelle année avez-vous rejoint la communauté Vikidienne ?]' derivation='Year' name='[yr:En quelle année avez-vous rejoint la communauté Vikidienne ?:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0oxqq921q3rmoe116u2cv0uhylv6].[yr:En quelle année avez-vous rejoint la communauté Vikidienne ?:ok]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[yr:En quelle année avez-vous rejoint la communauté Vikidienne ?:ok]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[yr:En quelle année avez-vous rejoint la communauté Vikidienne ?:ok]' member='%null%' />
+                <groupfilter from='-1' function='range' level='[yr:En quelle année avez-vous rejoint la communauté Vikidienne ?:ok]' to='2005' />
+                <groupfilter from='2036' function='range' level='[yr:En quelle année avez-vous rejoint la communauté Vikidienne ?:ok]' to='3021' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0oxqq921q3rmoe116u2cv0uhylv6].[yr:En quelle année avez-vous rejoint la communauté Vikidienne ?:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0oxqq921q3rmoe116u2cv0uhylv6].[cnt:Quel est votre degré de contribution ?:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-orientation' field='[federated.0oxqq921q3rmoe116u2cv0uhylv6].[yr:En quelle année avez-vous rejoint la communauté Vikidienne ?:ok]' value='0' />
+            <format attr='vertical-align' field='[federated.0oxqq921q3rmoe116u2cv0uhylv6].[yr:En quelle année avez-vous rejoint la communauté Vikidienne ?:ok]' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.0oxqq921q3rmoe116u2cv0uhylv6].[yr:En quelle année avez-vous rejoint la communauté Vikidienne ?:ok]' value='0' />
+            <format attr='font-family' field='[federated.0oxqq921q3rmoe116u2cv0uhylv6].[yr:En quelle année avez-vous rejoint la communauté Vikidienne ?:ok]' value='Montserrat ExtraBold' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f9f9f0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0oxqq921q3rmoe116u2cv0uhylv6].[yr:En quelle année avez-vous rejoint la communauté Vikidienne ?:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0oxqq921q3rmoe116u2cv0uhylv6].[cnt:Quel est votre degré de contribution ?:qk]</rows>
+        <cols>[federated.0oxqq921q3rmoe116u2cv0uhylv6].[yr:En quelle année avez-vous rejoint la communauté Vikidienne ?:ok]</cols>
+      </table>
+      <simple-id uuid='{F285A81E-9674-4E2B-8F51-DA27E68D5A8E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Tableau de bord 1'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#f9f9f0' />
+        </style-rule>
+      </style>
+      <size maxheight='500' maxwidth='700' minheight='500' minwidth='700' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='96800' id='7' param='horz' type-v2='layout-flow' w='97714' x='1143' y='1600'>
+            <zone h='96800' id='5' type-v2='layout-basic' w='97714' x='1143' y='1600'>
+              <zone h='96800' id='3' name='Feuille 1' show-title='false' w='97714' x='1143' y='1600'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='9' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='96800' id='8' param='vert' type-v2='layout-flow' w='97714' x='1143' y='1600'>
+                <zone fixed-size='280' h='96800' id='3' is-fixed='true' name='Feuille 1' show-title='false' w='97714' x='1143' y='1600'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{2736863C-29BF-40E7-8052-B49283131A12}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Feuille 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0oxqq921q3rmoe116u2cv0uhylv6].[yr:En quelle année avez-vous rejoint la communauté Vikidienne ?:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0oxqq921q3rmoe116u2cv0uhylv6].[none:Calculation_1708553167998816256:nk]</field>
+            <field>[federated.0oxqq921q3rmoe116u2cv0uhylv6].[none:En quelle année avez-vous rejoint la communauté Vikidienne ?:nk]</field>
+            <field>[federated.0oxqq921q3rmoe116u2cv0uhylv6].[none:Quel est votre degré de contribution ?:nk]</field>
+            <field>[federated.0oxqq921q3rmoe116u2cv0uhylv6].[yr:En quelle année avez-vous rejoint la communauté Vikidienne ?:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{70FDC6B9-3A1E-4BBF-A960-E6DAEC9B2DBF}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Tableau de bord 1'>
+      <viewpoints>
+        <viewpoint name='Feuille 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{7A34DDAD-48F7-4C69-942C-79A214F67A6F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Feuille 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAK+ElEQVR4nO3baVdUV77H8W9NVDHPiAwySBxxiEFA7ZB0pzs3fe+byou5j+6ThBgVGRQN
+      osEhEEEBZVJmGUSmgqo6+z6w113d6wJpCN0O/99nLR6ezeZQ33P2GcrnnHOIGBUE8Lw4ziXe
+      9VxE/u2CAM4lSCSi73ouIv92/nc9AZF3SQGIaQpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGI
+      aQpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGIaQpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGI
+      aQpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGIaQpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGI
+      aQpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGIaQpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGI
+      aQpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGIaQpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGI
+      aQpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGIaQpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGI
+      aQpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGIaQpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGI
+      aQpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGIaQpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGI
+      aQpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGIaQpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGI
+      aQpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGIaQpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGI
+      aQpATFMAYpoCENMUgJimAMQ0BSCmBd/1BET2w/ArRzyx++0UgHwU3qzD5h4C0BJITFMAYpoC
+      ENMUgJimAMQ03QWSXRmZc2zGd79dbhrkpfn2f0K/kwKQXVmJwnps99ulhvd/LvtBSyAxTQGI
+      aVoCfeSccyS8vW0b8IPP9/6t2/eTAvjIrW1C3+Tetj1dApHQ/s7nfaMA5J1YiTqeze5t2+pi
+      CAX258ykAOSdcEBsDy+v7TddBItpOgO8h5ajjrXN3W8XCkBO6sd90brfFMB7aHEVpt/sfrvU
+      MOSk7v98PmZbBpDwHJ7b/WA+ILhPFycfGu2zD9OWAbxcgNnl3Q+WHoHjB3/vlD5Mk69hamn3
+      26Ukvb2rIe/GB7cE6ptwbOzhZayiLCjM1JFW/tG/PID1Tcfo/N62rSr4//d7497bn93aanny
+      bMbtaayCdMh9D99slN3bMoDctLen5t0KBbb4BQHI3eOFmX+Lz1hJNnt6tL/V24jZqeDtYazk
+      LfZNdgqE93A4CW6xz7JT9/YEdquxkoJQnrv7sbYbryhrf/Z/+HfMa6tLppKcvf0vfc45l0hs
+      kEhE9zYbkQ+YHoSJaYFvv/32W+cSOPePV5Yrcy/57rsmBl4uUJSXzNUfrtA3tkBFSQ43r13j
+      58dj5GYGabp6k97ePtYDGRTnZ2z5SxbGn/NdYzOjs2sUZMDlxqsMzaxzKD+F6z9epfv5DMWF
+      WbQ3NdHVM0RecQnpyVuvAbx4lFtNV7nd9YTswiKe3L1J+71ecg6WMtHXxdW2eyRl5DLe10Vb
+      xy/4U3MoyE7b5s93TA8/pfFyK+NLHrmhNb7//jpTy46VyQFuPBimLDfE5cZrDM+uU1Z2kOBW
+      67K/M/fyGY2Xmxmbi5Id2qCxsYmpZcfq9CAdDwd4NTbMr8OvqKwo2fJU/vfGnjzi8rV2FjdC
+      pLklvm+8zsyaY364lwf9U7yefEbnvV+YXHYcLi3YdhznPLrv3KC5/T7+tDwWR3q40nIXX1Iy
+      v3TeZiaaREleCh1t7STlFZMe2Xktt7Y4zY8/XKNncIrig1ncuHKFnqEZAhuLtLQ9JKcwlbbL
+      rQy+nKGktJSk4PbH2TczL2j8oYmnY4sU50e41niVgfEl4kuTtN7p41BpLh0tLdztGaGsspxI
+      aPuxlqZHaWxsYmB8ieLcJK42XmFwcgXfyjTNN34hFpvnp45H9PQMUlBRTlpScPsAnOfIzEnn
+      butt3izPsZZyCN/EAwYmXjO2FKQyPEffTIKCA4VM93dz4NinFOdu/UHzPI/c7BRutt5haX6c
+      YPFJFnraGZtdZN7lkrkywMhrx+Mno4Q3X+HPr+JQfvo2/0xHMDmdhaFuphbf0NU7y8Xjmdy4
+      94TenmG++PwEP/z4E8NDY5SV59F+f5iG2pPb7jQv4cjKCNPc9oC1mUGyjp5n4Kc2Kj/7jM7O
+      +wSXXrCRf5KFx7eJlFVTkLHzV5s8z5GXl07z9TvMjw+Rf6KOZ50tVNXWcK+li0ufV3Orc4C6
+      2lPs8Ll4O5bzkZvqaOnoZ/FFHweq6+i91cyxc9XcufOUr76+xMMbbeQfq6GiMHPnwQIhAiuT
+      dA/P8vhhHw0NZ7jc0sOpshQG5iC8OEDXyArlJYVkZ6TsOJRzHulZWTxsb2M1uspELIfs5UGW
+      0yqZ/PUReWU5dHQ8per4UcpLC3c8aHjOIysrg1vN7WxE51lJLSc+cp9QaTX9D+4T8ha4+3Se
+      yspDHK4o2fElOOd5ZGalc/P6LTbWXxHNrGJ94C6plWd42vkzhVUl5Odk0PVwkAuXakgO+rdf
+      AvkDfjqbWyn6tJ4DaSGcc8TjjkDQjw9HLJEgJaeYc2VJzPkLOFGx/REo4Ie2a22cuHiJrLAP
+      PI+EB4FAAJxHPO5YfzOPF0ohOyOZufntb6j7fD5mn/cwtJrGuaPF+IBYPI4/EMDvh3g8TiA5
+      i//6z0vMT70iHNnpA+sj4IvT3NROXcMlQn4/nufhOUc4kkzABwF/AOd5JJzj7WOrnfl9CVqu
+      tHD6UgPpySGc8/A8iKRE8AOR5OR/YpS/ia9ypeln/vDHesJBP57zcJ4jOSWCD4iub/DJ0Uru
+      33vIb71XFl0Y51bvKxrqThDw+fDicfAHSI4kwcYibZ19JJYm+O//ucLCys7vYfgDfh7dvkHG
+      0RqKMkP4nEc84UgKhwkG/ASTMqirr6artZmx+ZUdxwoEfHS0tlJRc4HscBDnecSdIxyJEPBD
+      LBYnNSuXl913GfiNBy2BANxubuNI/UUyQ/7/GyspHCEY8FN19jyx6RGqPqsj6293LLY9AyxN
+      jfJ8ZpWAF+PYp+d5PdpPsOAIf/3zBTZmR1ggm68+P8f8xAsOHjm14xFodvQZE0sxXHyTs7V1
+      jPc/JuvwWb7+8hwLo/3E0kv5y5e1JN7MsRHI4HzNKTK3+RJpIrZGT3c/4UgSobwyKjM2GZrd
+      5C/ffE1Fro/u/im++KqB5ckxlhIRvvnmS7J2+ELq+PN+5tchtrJJ/Z9qed79K6VnajldeYC1
+      aIz6i+cZefKYrMoz1FaXEfiNJdDM2HMml+J4sRg19ecY6n1M6alazhwpYnV5g4qqUjbjPg5X
+      /vYSaORpH8tekI3NOBfqPqW/u4fysxeprixgLZogujjF+EKU2gv1FOdnbB+Wc/R2d+MPJxP3
+      Z/DZ8XwePRnni6+/oiDVD6kF/PU/vuRwSS5pecUcKTuAf4cvwizPTTD4YpEQm5SdqiU+O0Qs
+      vYSGuhPE1tfJzIwwNDhK0SfVnDtZueNRe35ilLHZVXyxNY6f/wOvR/oIHzzGhbOVbEQ3OFdX
+      y9qrCSL55dSc/oTwDqfNufERXsyvQ2yVk/UNzD3vJbX0JPWny1lfi1JWWcTLsWlqLtaTHnl7
+      i+t/ATzRmg1lyfJPAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Tableau de bord 1' width='192'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>

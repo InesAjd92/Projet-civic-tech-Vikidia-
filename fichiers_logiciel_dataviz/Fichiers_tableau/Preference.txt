@@ -1,0 +1,46 @@
+<?xml version='1.0'?>
+
+<workbook>
+
+<preferences>
+	<color-palette name="White to Black" type="ordered-sequential" >
+		
+	</color-palette>  
+
+<color-palette name="Wikimédia" type="regular" >
+	
+<color>#970302 </color>
+<color>#E679A6 </color>
+<color>#EE8019 </color>
+<color>#FOBCOO </color>
+<color>#5748B5 </color>
+<color>#305D70 </color>
+<color>#0E65CO </color>
+<color>#049DFF </color>
+<color>#E9E7C4 </color>
+<color>#308557 </color>
+<color>#71D1B3 </color>
+
+	</color-palette>  
+
+
+<color-palette name="Wikimédia light" type="regular" >
+	
+<color>#E5C0C0 </color>
+<color>#F9DDE9 </color>
+<color>#FBDFC5 </color>
+<color>#FBEEBF </color>
+<color>#D5D1EC </color>
+<color>#CBD6DB </color>
+<color>#C3D8EF </color>
+<color>#C0E6FF </color>
+<color>#F9F9F0 </color>
+<color>#CBE0D5 </color>
+<color>#DBF3EC </color>
+
+	</color-palette>  
+
+
+
+</preferences>
+</workbook>
