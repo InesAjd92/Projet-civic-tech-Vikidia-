@@ -1,0 +1,42 @@
+Pour les graphiques à uniformiser : 
+
+Donut chart : 
+
+Couleurs : wikimedia light
+
+Etiquettes : 
+- #555555
+- Montserrat Black 9 
+- Dans l'idéal, d'abord le chiffre ensuite la catégorie :
+
+es : <SOMME(Percentage)>
+     <Category>
+
+
+Etiquette du centre : 
+
+- #555555
+- Montserrat Black 14
+- Dans l'idéal, d'abord le chiffre ensuite la catégorie :
+
+es : <SOMME(Percentage)>
+     <Category>
+
+Bordure : 
+- Mettre en blanc 
+
+Pour les barplot : 
+
+- Etiquette en fin de barre
+- #555555
+- Montserrat Black 9 
+- Dans l'idéal, d'abord le chiffre ensuite la catégorie :
+
+es : <SOMME(Percentage)>
+     <Category>
+
+
+Pour les pourcentages : 
+
+Arrondir a 0 décimale
+
